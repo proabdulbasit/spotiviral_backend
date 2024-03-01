@@ -14,7 +14,7 @@ app.use(cors());
 app.use('/api',apiRoute)
 // Define your routes
 app.get('/', (req, res) => {
-  res.send('Hello, world!');
+  res.send('Backend is working!');
 });
 
 app.post('/sendmail', async (req, res) => {
@@ -47,9 +47,9 @@ app.post('/sendmail', async (req, res) => {
 
  }
 });
-app.get('/test', (req, res) => {
-  res.send('Backend is working!');
-});
+// app.get('/test', (req, res) => {
+//   res.send('Backend is working!');
+// });
 app.post('/contact', async (req, res) => {
   try {
    //console.log(req.body)
